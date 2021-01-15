@@ -1,18 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Thasadith:wght@700&family=Yusei+Magic&display=swap");
 :root {
-  --backgroundSize: 300px;
+  --backgroundSize: 500px;
 }
 
 body {
-  background-image: url(https://img.freepik.com/free-vector/seamless-pattern_1159-5086.jpg?size=626&ext=jpg);
+  background-image: url(rain.png);
   background-size: var(--backgroundSize);
   animation: movingBackground 5s linear infinite;
+
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #333;
+  font-family: "Yusei Magic", sans-serif;
+  font-size: 50px;
 }
 
 @keyframes movingBackground {
   from {
-    background-position: 0 0;
+    background-position: var(--backgroundSize) 0;
   }
   to {
-    background-position: var(--backgroundSize) var(--backgroundSize);
+    background-position: 0 var(--backgroundSize);
   }
 }
