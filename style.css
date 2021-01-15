@@ -1,0 +1,18 @@
+:root {
+  --backgroundSize: 300px;
+}
+
+body {
+  background-image: url(https://img.freepik.com/free-vector/seamless-pattern_1159-5086.jpg?size=626&ext=jpg);
+  background-size: var(--backgroundSize);
+  animation: movingBackground 5s linear infinite;
+}
+
+@keyframes movingBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: var(--backgroundSize) var(--backgroundSize);
+  }
+}
