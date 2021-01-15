@@ -8,6 +8,7 @@ body {
   background-size: var(--backgroundSize);
   animation: movingBackground 5s linear infinite;
 
+  user-select: none;
   height: 100vh;
   overflow: hidden;
   display: flex;
